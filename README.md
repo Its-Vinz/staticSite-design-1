@@ -9,8 +9,6 @@ Services Page: Detailed description of various electrical services provided.
 Contact Page: Contact form for inquiries and service requests.
 
 ## Technologies Used
-
-    Frontend:
             HTML5
             CSS3
             JavaScript
