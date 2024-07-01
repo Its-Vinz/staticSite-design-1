@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mayur Electricals</title>
+
+<!-- 
+  - favicon
+-->
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- 
+  - bootstrap css link
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- 
+  - bootstrap incon link
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- 
+  - internal css
+-->
+
+<style>
+body{
+  background-color: #221f22;
+}
+
+.footer .col h2{
+  font-size: 21px;
+}
+
+.footer .col p{
+  font-size: 14px;
+}
+
+.row a .bi{
+  padding: 5px;
+  text-decoration: none;
+  font-size: 21px;
+  color: aliceblue;
+}
+
+.row a .bi:hover{
+  color: #94686D;
+}
+
+.text-highlight {
+  color: #94686D;
+  text-shadow: 2px 2px 2px rgba(89, 62, 65, 0.6);
+}
+
+.list-unstyled li, i, a{
+  text-decoration: none; 
+  color: white;
+}
+
+.list-unstyled li, i, a:hover{
+  color: #dda2a9;
+}
+
+.container-contact {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container-contact {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-contact {
+    padding: 0 60px;
+  }
+}
+
+.contact-enquiry form {
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(34, 31, 34, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-enquiry .form-control {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #221f22;
+  color: white;
+}
+
+.contact-enquiry .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-enquiry .btn {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: #94686D;
+  border-color: #94686D;
+}
+
+.contact-enquiry .btn:hover {
+  background-color: #7b4e52;
+  border-color: #7b4e52;
+}
+
+.whatsappgrp {
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.whatsappgrp p{
+  pointer-events: none;
+  user-select: none;
+}
+
+.whatsappgrp img.whatsapp-icon {
+  width: 45%;
+  height: 45%;
+  margin-right: 1rem;
+}
+
+.whatsappgrp p {
+  font-size: 1.2rem;
+  color: #25D366;
+  margin: 0;
+}
+</style>
+</head>
+
+<body>
+<!-- 
+  - Header
+-->
+<nav class="navbar navbar-dark position-relative" style="background-color: #000;">
+  
+  <div class="container-fluid justify-content-between align-items-center">
+    <a class="navbar-brand mb-0 h1 text-center" href="/index.html">
+      <span>MAYUR</span> ELECTRICALS
+    </a>
+
+    <!-- 
+      - toggler for small devices
+    -->
+
+    <div class="d-lg-none">
+      <img src="/assets/images/lightning-charge.svg" alt="Lightning Icon" id="icon" class="lightning-icon">
+    </div>
+
+    <!--
+      - Toggler for desktop view (login) 
+    -->
+
+    <!-- <div class="d-none d-lg-block login-container">
+      <a href="/login.html" class="login-link">
+        <img src="./assets/images/login-in.svg" alt="Login" id="login" class="login-icon">Login
+      </a>    
+    </div> -->
+
+  </div>
+
+  <!-- 
+    - Nav links
+  -->
+  <ul class="navbar-nav flex-row justify-content-center align-items-center mt-2" id="navbarLinks">
+    <li class="nav-item"><a class="nav-link" href="/index.html" target="_parent">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/about.html" target="_blank">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/services.html" target="_blank">Services</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
+
+</nav>    
+
+
+
+  <!--
+    - Contact Us content
+  -->  
+  <div class="container-contact mt-5" id="contact">
+
+    <h1 class="text-center" style="color:#94686D;pointer-events: none;user-select: none;margin-top: 45px;">Contact Us</h1>
+    <p class="text-center" style="color: #ffffff;pointer-events: none;user-select: none;margin-top: 20px;">Have a question or need immediate help? Our team is ready to assist. Contact us using the methods below, and we'll respond promptly.</p>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 text-center">
+
+        <h2 class="text-highlight text-center" style="pointer-events: none;user-select: none;margin-top: 45px;">Contact Information</h2>
+          <ul class="list-unstyled">
+            <li style="margin: 6px;">
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+91 89566 76732"><span>+91 89566 76732</span></a>
+            </li>
+            <li style="margin: 6px;">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:mayurelectrical76732@gmail.com"><span>Email Us</span></a>
+            </li>
+            <li style="margin: 6px;">
+              <i class="bi bi-geo-alt-fill"></i>
+              <a href="https://maps.app.goo.gl/2qxxd83xbQLNhL848"><span>Plot 4, Shree Ballaleshwar Apartment, Pathardi Phata, Nashik, Maharashtra, India</span></a>
+            </li>
+          </ul>
+
+          <div class="whatsappgrp">
+            <a href="https://chat.whatsapp.com/KYEGoRarET4BgKX7J1gn5W" target="_blank">
+                <img src="/assets/images/WhatsApp-Monochrome.svg" alt="Join our WhatsApp community" class="whatsapp-icon">
+            </a>
+            <p>Join our WhatsApp community for updates and support!</p>
+          </div>
+
+      </div>
+
+      <div class="contact-enquiry col-lg-6 col-md-12 mb-4">
+        <h2 class="text-highlight text-center" style="pointer-events: none;user-select: none;margin-top: 45px;">Online Contact Form</h2>
+
+        <form onsubmit="sendFormData(event)">
+          <div class="mb-3">
+            <label for="name" class="form-label text-highlight">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-highlight">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label text-highlight">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-highlight">Message:</label>
+            <textarea class="form-control" id="message" name="message" placeholder="How can we help you?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row mt-5">
+
+      <div class="col text-center">
+        <h2 style="pointer-events: none;user-select: none; color:#94686D;">Follow Us</h2>
+        <p style="pointer-events: none;user-select: none;color: #ffffff;">Stay connected and follow us on social media for the latest updates and special offers:</p>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- 
+    - footer content
+  -->
+  <footer class="footer text-white mt-5 py-3">
+    <div class="container text-center">
+
+      <div class="row">
+        <div class="col" style="pointer-events: none;user-select: none;">
+          <h2 style="pointer-events: none;user-select: none; color:#94686D;">Business Hours</h2>
+          <p><strong>Monday to Friday:</strong> 9:00 AM - 7:00 PM</p>
+          <p><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+          <p><strong>Sunday:</strong> Closed</p>
+          <p><strong>For emergency services, we are available 24/7. Please call our emergency hotline at +91 89566 76732</strong></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        <p style="font-size: 14px; margin-bottom: 5px; user-select: none;pointer-events: none;">&copy; 2024 Mayur Electricals. All rights reserved</p>
+        <p style="font-size: 12px;">Designed and maintained by <a href="https://github.com/Its-Vinz" target="_blank">Pixelwaves Solutions</a></p>
+        <hr style="width: 30%; margin: auto; margin-top: 10px;">
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/assets/js/script.js"></script>
+
+
+  <!-- 
+    - bootstrap js link 
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

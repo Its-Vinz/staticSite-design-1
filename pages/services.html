@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Mayur Electricals</title>
+
+<!-- 
+  - favicon
+-->
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- 
+  - bootstrap css link
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- 
+  - bootstrap icon link
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- 
+  - animate on scroll
+-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- 
+  - internal css
+-->
+<style>
+  body{
+    background-color: #221f22;
+  }
+
+  .service-itemm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+  }
+
+  .service-image img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .service-textt p {
+    color: white;
+    padding: 0 1rem;
+    line-height: 1.5;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+    margin-top: 1rem;
+  }
+
+  .welcome2 p{
+    text-align: center;
+    color: #c4a5a8;
+    margin: 3rem 3rem;
+    font-size: 20px;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .service-textt span {
+    color: white; 
+    background-color: #94686D;
+    padding: 0.1rem 0.2rem;
+    border-radius: 3px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container h2{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(89, 62, 65, 0.6);
+    margin-bottom: 1rem;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .recommendation{
+    text-align: center;
+    font-size: 1rem;
+    user-select: none;
+    pointer-events: none;
+    margin: 3rem;
+    color: #c4c0c0;
+  }
+    
+    /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .service-image img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .welcome2 p{
+      margin: 2rem 2rem;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .service-image img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .welcome2 p{
+      margin: 2rem 2rem;
+      font-size: 20px;
+    }
+  }
+</style>
+</head>
+
+<body>
+<!-- 
+  - Header
+-->
+<nav class="navbar navbar-dark position-relative" style="background-color: #000;">
+  
+  <div class="container-fluid justify-content-between align-items-center">
+    <a class="navbar-brand mb-0 h1 text-center" href="/index.html">
+      <span>MAYUR</span> ELECTRICALS
+    </a>
+
+    <!-- 
+      - toggler for small devices
+    -->
+
+    <div class="d-lg-none">
+      <img src="/assets/images/lightning-charge.svg" alt="Lightning Icon" id="icon" class="lightning-icon">
+    </div>
+
+    <!--
+      - Toggler for desktop view (login) 
+    -->
+
+    <!-- <div class="d-none d-lg-block login-container">
+      <a href="/login.html" class="login-link">
+        <img src="./assets/images/login-in.svg" alt="Login" id="login" class="login-icon">Login
+      </a>    
+    </div> -->
+
+  </div>
+
+  <!-- 
+    - Nav links
+  -->
+  <ul class="navbar-nav flex-row justify-content-center align-items-center mt-2" id="navbarLinks">
+    <li class="nav-item"><a class="nav-link" href="/index.html" target="_parent">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/about.html" target="_blank">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/contact.html" target="_blank">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+
+  <!-- 
+    - welcome content
+  -->
+  <section class="welcome-section text-center py-5" id="welcome">
+
+    <video id="background-video" autoplay muted loop playsinline>
+      <source data-src="assets/images/main-footage-welcome.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <div class="container">
+      <div class="welcome-content">
+        <h1 class="display-4">Services</h1>
+        <p class="lead">Transforming Homes and Businesses with Skilled Electrical Solutions</p>
+      </div>
+    </div>
+  
+    <a href="#explore" class="scroll-icon">
+        <i class="bi bi-chevron-compact-down" style="color: white;"></i>
+    </a>
+  
+  </section>
+  
+
+  <div class="welcome2" id="explore">
+    <p>Explore our top-notch services tailored to meet all your electrical needs. From residential to industrial solutions, we ensure quality and reliability in every project...</p>
+  </div>
+
+<!-- 
+    - services content
+    -->
+  <div class="container fs-6">
+      
+    <h2>Residential Services</h2>
+    <div class="service-itemm" data-aos="fade-right" data-aos-duration="2000">
+      <div class="service-image">
+        <img src="/assets/images/residential-services.jpg" alt="Residential-Electrical-Services">
+      </div>
+
+      <div class="service-textt">
+        <p>We offer a comprehensive range of residential electrical services to ensure your home is safe, efficient, and up-to-date with the latest technology. Our services include, <span>wiring installations</span>, <span>Lighting fittings</span>, <span>Electrical maintenance</span>, <span>Panel upgrades</span>, <span>Outlet and switch installations</span>, <span>Home automation systems</span>, <span>Indoor and outdoor lighting fittings</span>, <span>Ceiling fan installations</span>, <span>Surge protection</span>, <span>Safety inspections</span>, etc. We also provide advanced services such as <span>smart home integration</span>, <span>EV charger installations</span>, <span>energy-efficient lighting solutions</span>, and <span>whole-house surge protection</span>.</p>
+      </div>
+    </div>
+
+    <hr class="common-hr" style="margin: 2rem auto;">
+
+    <h2>Commercial Services</h2>
+    <div class="service-itemm" data-aos="fade-left" data-aos-duration="2000">
+      <div class="service-image">
+        <img src="/assets/images/commercial-services.jpg" alt="Commercial-Electrical-Services">
+      </div>
+
+      <div class="service-textt">
+        <p>Discover our comprehensive suite of modern commercial electrical services designed to elevate your business operations. At Mayur Electricals, we specialize in delivering cutting-edge solutions tailored to meet the unique needs of modern enterprises. Our services include,<span>Electrical Design and Build</span>, <span>Lighting Design and Installation</span>, <span>Electrical Maintenance and Repair</span>, <span>Power Distribution and Control Systems</span>, <span>Communication and Data Cabling</span>, <span>Fire Alarm Systems</span>, <span>Security Systems</span>, <span>Automation Systems</span>, <span>Surge protection</span>, <span>Safety inspections</span>, etc, also provide advanced services such as, <span>EV charger installations</span>, <span>energy-efficient lighting solutions</span>, and <span>whole-complex surge protection</span>.</p>
+      </div>
+    </div>
+
+    <hr class="common-hr" style="margin: 2rem auto;">
+
+    <h2>Industrial Electrical Services</h2>
+    <div class="service-itemm" data-aos="fade-right" data-aos-duration="1000"> 
+      <div class="service-image">
+        <img src="/assets/images/industrial-services.jpg" alt="Industrial-Electrical-Services">
+      </div>
+
+      <div class="service-textt">
+        <p>We provide comprehensive industrial electrical services designed to ensure safety, efficiency, and reliability in your industrial operation. Our services include, <span>wiring installations</span>, <span>Lighting fittings</span>, <span>Electrical maintenance</span>, <span>Panel building</span>, <span>High Voltage Maintenance</span>, <span>Cable Jointing Services</span>, <span>Power distribution and feeder installation</span>, <span>Backup generators</span>, <span>Machinery upgrades and relocations</span>, <span>Safety inspections</span>, etc. We also provide advanced services such as, <span>EV charger installations</span>, <span>energy-efficient lighting solutions</span>, and <span>whole-house surge protection</span>.</p>
+      </div>
+    </div>
+
+    <hr class="common-hr" style="margin: 2rem auto;">
+
+    <div class="client-logo-para-copyright">
+        <p>All images used are for illustration purposes only. All copyrights and trademarks are the property of their respective owners.</p>
+    </div>
+
+  </div>
+
+  <div class="recommendation">
+    <p>For a detailed consultation and customized solutions, we recommend consulting with our experts to understand your specific needs and ensure the best outcomes for your industrial operations.</p>
+  </div>
+
+
+
+  <!-- 
+    - Floating Button (This is floating enquiry form) comment if not in use!
+  -->
+  <div class="floating-icon-container" id="floating-icon-container">
+
+    <div class="blinking-text">Enquiry</div>
+        <div class="floating-icon">
+            <img src="/assets/images/support.png" alt="Floating Icon" style="pointer-events: none;user-select: none;">
+        </div>
+  </div>
+
+  <div class="popup-form" id="popup-form">
+
+    <div class="popup-header">
+      <h4 style="user-select: none; pointer-events: none;">Enquiry Form</h4>
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+
+    <form onsubmit="sendFormData(event)">
+      <div class="form-group">
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" class="form-control" placeholder="WhatsApp Number" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" class="form-control" placeholder="Message" required></textarea>
+      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+  </div>
+
+
+
+  <!-- 
+    - Footer Section 
+  -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row justify-content-between">
+
+        <div class="col-lg-3 col-md-6 mb-4 footer-section"> 
+          <h4  style="pointer-events: none;user-select: none;">Get in Touch</h4>
+            <ul class="contact-info">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <a href="https://maps.app.goo.gl/2qxxd83xbQLNhL848"><span>Plot 4, Shree Ballaleshwar Apartment, Pathardi Phata, Nashik, Maharashtra, India- 422010</span></a>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <a href="tel:+91 89566 76732"><span>+91 89566 76732</span></a>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <a href="https://api.whatsapp.com/send?phone=918956676732&text=Hi%20there!%20I%20need%20assistance%20regarding%20your%20product.%20I%20was%20redirected%20from%20your%20website.%20Could%20you%20please%20help%20me%20out?%20Thank%20you!"><span>+91 89566 76732</span></a>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:mayurelectrical76732@gmail.com"><span>Email Us</span></a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 footer-section">
+          <h4  style="pointer-events: none;user-select: none;">Quick Links</h4>
+            <ul class="quick-links">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/pages/about.html" target="_blank">About</a></li>
+              <li><a href="#" target="_blank">Services</a></li>
+              <!-- <li><a href="./errors/404.html">Products</li> -->
+              <li><a href="/pages/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 footer-section">
+          <h4  style="pointer-events: none;user-select: none;">Pages</h4>
+            <ul class="other-links">
+              <li><a href="/policy-pages/disclaimer.html" target="_blank">Disclaimer</a></li>
+              <li><a href="/policy-pages/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+              <li><a href="/policy-pages/terms&condition.html" target="_blank">Terms of Service</a></li>
+              <li><a href="/policy-pages/faq.html" target="_blank">FAQ's</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 footer-section text-align-centre">
+          <h4  style="pointer-events: none;user-select: none;">Follow Us</h4>
+            <ul class="social-media">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+          <p style="font-size: 14px; margin-bottom: 5px; user-select: none;pointer-events: none;">&copy; 2024 Mayur Electricals. All rights reserved</p>
+          <p style="font-size: 12px;">Designed and maintained by <a href="https://github.com/Its-Vinz" target="_blank">Pixelwaves Solutions</a></p>
+          <hr style="width: 30%; margin: auto; margin-top: 10px;">
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - AOS js link
+  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!-- 
+    - AOS initialization
+  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+  </script>
+
+
+<!-- 
+  - bootstrap js link 
+-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<!-- 
+    - custom js link
+-->
+  <script src="/assets/js/script.js"></script>
+
+</body>
+</html>

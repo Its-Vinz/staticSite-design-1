@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Mayur Electricals</title>
+
+<!-- 
+  - favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+<!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- 
+  - bootstrap css link
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- 
+  - bootstrap incon link
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- 
+  - internal css
+-->
+
+<style>
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #221f22;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.about h1, h2 {
+  color: #94686D;
+  text-shadow: 2px 2px 2px rgba(89,62,65,0.6);
+  pointer-events: none;
+  user-select: none;
+}
+
+.m1{
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.logo {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100%;
+  filter: invert(0);
+  pointer-events: none;
+  user-select: none;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  width: auto;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: invert(1);
+  pointer-events: none;
+  user-select: none;
+}
+
+.team-member h5 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #94686D;
+  pointer-events: none;
+  user-select: none;
+}
+
+.footer .col h2{
+  font-size: 21px;
+}
+
+.footer .col p{
+  font-size: 14px;
+}
+
+.row a .bi{
+  padding: 5px;
+  text-decoration: none;
+  font-size: 21px;
+  color: aliceblue;
+}
+
+.row a .bi:hover{
+  color: #94686D;
+}
+
+.footer-bottom p a{
+  color: #94686D;
+}
+
+.footer-bottom p a:hover{
+  color: #c4a2a6;
+} 
+</style>
+</head>
+
+<body>
+<!-- 
+  - Header
+-->
+<nav class="navbar navbar-dark position-relative" style="background-color: #000;">
+  
+  <div class="container-fluid justify-content-between align-items-center">
+    <a class="navbar-brand mb-0 h1 text-center" href="/index.html">
+      <span>MAYUR</span> ELECTRICALS
+    </a>
+
+    <!-- 
+      - toggler for small devices
+    -->
+
+    <div class="d-lg-none">
+      <img src="/assets/images/lightning-charge.svg" alt="Lightning Icon" id="icon" class="lightning-icon">
+    </div>
+
+    <!--
+      - Toggler for desktop view (login) 
+    -->
+
+    <!-- <div class="d-none d-lg-block login-container">
+      <a href="/login.html" class="login-link">
+        <img src="./assets/images/login-in.svg" alt="Login" id="login" class="login-icon">Login
+      </a>    
+    </div> -->
+
+  </div>
+
+  <!-- 
+    - Nav links
+  -->
+  <ul class="navbar-nav flex-row justify-content-center align-items-center mt-2" id="navbarLinks">
+    <li class="nav-item"><a class="nav-link" href="/index.html" target="_parent">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/services.html" target="_blank">Services</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pages/contact.html" target="_blank">Contact</a></li>
+  </ul>
+
+</nav>    
+
+
+
+  <!--
+    - About Us content
+  -->  
+  <div class="container mt-5 text-center about" id="about">
+
+    <h1 class="text-center">About</h1>
+    <div class="logo">
+      <img src="/assets/images/code.png" style="pointer-events: none; user-select: none;" alt="Mayur Electricals Logo">
+    </div>
+
+    <p class="mt-4 m1">Founded in 2019, Mayur Electricals has been providing top-notch electrical services for over 4 years. Starting as a small business, we've grown into a trusted name in the industry, known for our commitment to quality and customer satisfaction. We specialize in a wide range of electrical services, including residential, commercial, and industrial projects. From wiring and lighting to complex installations and maintenance, we ensure every job is done right the first time. With decades of experience, our team is equipped to handle any electrical challenge. We stay up-to-date with the latest technologies and industry standards to provide our clients with the best solutions possible.</p>
+      
+    <hr class="common-hr">
+
+    <h2>Our Team</h2>
+      <div class="row mt-4">
+
+        <div class="col-md-4 col-sm-6 col-xs-12 team-member">
+          <img src="/assets/images/user.svg" alt="Team Member 1">
+            <h5>Mayur Wagh</h5>
+              <p class="m1">Chief Electrician</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 team-member">
+          <img src="/assets/images/user.svg" alt="Team Member 2">
+            <h5>Samadhan Pund</h5>
+              <p class="m1">Senior Technician</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 team-member">
+          <img src="/assets/images/user.svg" alt="Team Member 3">
+            <h5>Rohit Binnar</h5>
+              <p class="m1">Junior Technician</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr class="common-hr">
+
+  <div class="row mt-5 about">
+    <div class="col text-center">
+      <h2>Follow Us</h2>
+        <p class="m1 text-center">Stay connected and follow us on social media for the latest updates</p>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+
+
+
+  <!-- 
+    - footer content
+  -->
+  <footer class="footer text-white mt-5 py-3">
+    <div class="container text-center">
+
+      <div class="row">
+        <div class="col" style="pointer-events: none;user-select: none;">
+          <h2>Business Hours</h2>
+          <p><strong>Monday to Friday:</strong> 9:00 AM - 7:00 PM</p>
+          <p><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+          <p><strong>Sunday:</strong> Closed</p>
+          <p><strong>For emergency services, we are available 24/7. Please call our emergency hotline at +91 89566 76732</strong></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        <p style="font-size: 14px; margin-bottom: 5px; user-select: none;pointer-events: none;">&copy; 2024 Mayur Electricals. All rights reserved</p>
+        <p style="font-size: 12px;">Designed and maintained by <a href="https://github.com/Its-Vinz" target="_blank">Pixelwaves Solutions</a></p>
+        <hr style="width: 30%; margin: auto; margin-top: 10px;">
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+
+  <!-- 
+    - bootstrap js link 
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
